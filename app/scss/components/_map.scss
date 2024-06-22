@@ -1,0 +1,35 @@
+
+.map {
+  position: relative;
+  padding-bottom: 3.8rem;
+  margin-bottom: 14.4rem;
+  @include _48 {
+    padding-bottom: 3.6rem;
+    margin-bottom: 17.6rem;
+  }
+
+  &__btn {
+    width: 27rem;
+    height: 6.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 15rem;
+    background-color: #F04075;
+    box-shadow: 10px 10px 36px rgba(173, 21, 76, 0.26);
+    border: 0.4rem solid #D6C3D2;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @include _48 {
+      width: 45.2rem;
+      height: 11rem;
+      font-size: 3.2rem;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+    @@include('parts/components/_head.html',
+    {"title": "StendU | Недвижимость"
+    })
+  <body>
+    @@include('parts/components/header.html')
+
+    <div class="inner inner--property"></div>
+
+    <main class="main">
+      @@include('parts/components/_data.html')
+      @@include('parts/components/_map.html')
+      
+    </main>
+
+    ла
+    
+    @@include('parts/components/footer.html')
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script>
+      let map;
+
+      ymaps.ready(initMap);
+
+      function initMap() {
+        map = new ymaps.Map(document.getElementById("map"), {
+          center: [55.882409, 37.575702],
+          zoom: 12,
+        });
+
+        let placemark = new ymaps.Placemark([55.882409, 37.575702], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'sprite/sprite.svg#map-marker',
+          iconImageSize: [70, 70],
+          iconImageOffset: [-25, -77]
+        });
+        map.controls.remove('geolocationControl');
+        map.controls.remove('searchControl');
+        map.controls.remove('trafficControl');
+        map.controls.remove('typeSelector');
+        map.controls.remove('fullscreenControl');
+        map.controls.remove('zoomControl');
+        map.controls.remove('rulerControl');
+
+        map.geoObjects.add(placemark);
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js" defer></script>
+  </body>
+
+</html>

@@ -1,0 +1,700 @@
+    <!DOCTYPE html>
+<html lang="ru">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StendU | Недвижимость</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__top">
+      <div class="menu-mob">
+        <a class="menu-mob__btn" href="#">
+          <img class="menu-mob__btn-img" src="sprite/sprite.svg#menu-btn" alt="открыть меню">
+        </a>
+
+        <div class="menu-mob__inner">
+          <div class="menu-mob__wrapper">
+            <div class="menu-mob__top menu-mob__top--undefined">
+              <div class="menu-mob__user">
+                <img class="menu-mob__user-img" src="sprite/sprite.svg#user-undefined" alt="">
+
+                <img class="menu-mob__user-success" src="sprite/sprite.svg#user-success" alt="">
+              </div>
+
+              <a class="menu-mob__login" href="#">Войти</a>
+
+              <div class="menu-mob__info">
+                <div class="menu-mob__name">
+                  Алина Петрова
+                </div>
+
+                <div class="menu-mob__about">
+                  <div class="menu-mob__rating">
+                    <img class="menu-mob__rating-img" src="sprite/sprite.svg#star" alt="ваш рейтинг">
+
+                    <span class="menu-mob__rating">
+                      5.0
+                    </span>
+                  </div>
+
+                  <div class="menu-mob__review">
+                    <span class="menu-mob__review-count">
+                      26
+                    </span>
+
+                    отзывов
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-mob__bottom">
+              <ul class="menu-mob__list">
+                <li class="menu-mob__item">
+                  <a class="menu-mob__link" href="#">
+                    <img class="menu-mob__link-img" src="sprite/sprite.svg#menu-mob-announcements" alt="Мои объявления">
+
+                    Мои объявления
+                  </a>
+                </li>
+
+                <li class="menu-mob__item">
+                  <a class="menu-mob__link" href="#">
+                    <img class="menu-mob__link-img" src="sprite/sprite.svg#menu-mob-like" alt="Мои отзывы">
+
+                    Мои отзывы
+                  </a>
+                </li>
+
+                <li class="menu-mob__item">
+                  <a class="menu-mob__link" href="#">
+                    <img class="menu-mob__link-img" src="sprite/sprite.svg#menu-mob-favorite" alt="Избранное">
+
+                    Избранное
+                  </a>
+                </li>
+
+                <li class="menu-mob__item">
+                  <a class="menu-mob__link" href="#">
+                    <img class="menu-mob__link-img" src="sprite/sprite.svg#menu-mob-notification" alt="Уведомления">
+
+                    Уведомления
+                  </a>
+                </li>
+
+                <li class="menu-mob__item">
+                  <a class="menu-mob__link" href="#">
+                    <img class="menu-mob__link-img" src="sprite/sprite.svg#menu-mob-message" alt="Сообщения">
+
+                    Сообщения
+                  </a>
+                </li>
+
+                <li class="menu-mob__item">
+                  <a class="menu-mob__link" href="#">
+                    <img class="menu-mob__link-img" src="sprite/sprite.svg#menu-mob-setting" alt="Настройки">
+
+                    Настройки
+                  </a>
+                </li>
+              </ul>
+
+              <a class="menu-mob__announcement" href="#">
+                <div class="menu-mob__announcement-btn">
+                  <img class="menu-mob__announcement-img" src="sprite/sprite.svg#menu-mob-plus" alt="Создать объявление">
+                </div>
+
+                Создать объявление
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="header__location" href="#">
+        <img class="header__location-img" src="sprite/sprite.svg#location" alt="ваше местоположение">
+
+        <span>Ваш город:</span>
+
+        <span class="header__location-text">Рига</span>
+      </a>
+
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Все объявления</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="transport.html" class="menu__link">Авто</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="property.html" class="menu__link">Недвижимость</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">Работа</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">Услуги</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">Еще</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">О компании</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">Помощь</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="header__social social">
+        <li class="social__item social__item--mob">
+          <a class="social__link" href="#">
+            <img class="social__img" src="sprite/sprite.svg#social-PA-mob" alt="личный кабинет">
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__img" src="sprite/sprite.svg#social-PA" alt="личный кабинет">
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__img" src="sprite/sprite.svg#social-message" alt="сообщения">
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__img" src="sprite/sprite.svg#social-notification" alt="уведомления">
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__img" src="sprite/sprite.svg#social-favorite" alt="избранное">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header__bottom">
+      <a href="index.html" class="header__logo logo">
+        <img src="sprite/sprite.svg#logo" alt="логотип" class="header__logo-img">
+      </a>
+
+      <form class="header__search" action="#">
+        <button class="header__categories btn-blue" type="button">
+          <img class="header__categories-img header__categories-img--mob" src="sprite/sprite.svg#categories-mob"
+            alt="выбрать категории">
+
+          <img class="header__categories-img" src="sprite/sprite.svg#categories" alt="выбрать категории">
+
+          Категории
+        </button>
+
+        <div class="form">
+          <div class="form__top">
+            <input class="form__reset" type="reset">
+
+            <span class="form__text">Уточнить</span>
+
+            <button class="form__close" type="button"></button>
+          </div>
+
+          <ul class="form__items">
+            <li class="form__item">
+              <div class="form__subtitle">Категория</div>
+
+              <div class="form__select">
+                <input class="form__select-input" placeholder="Выбрать категорию" type="text">
+              </div>
+
+              <ul class="form__list">
+                <li class="form__box">
+                  <button class="form__elem" type="button">категория 1</button>
+                </li>
+
+                <li class="form__box">
+                  <button class="form__elem" type="button">категория 2</button>
+                </li>
+
+                <li class="form__box">
+                  <button class="form__elem" type="button">категория 3</button>
+                </li>
+              </ul>
+            </li>
+
+            <li class="form__item">
+              <div class="form__subtitle">Город или регион</div>
+
+              <div class="form__select">
+                <input class="form__select-input" placeholder="Выбрать город или регион" type="text">
+              </div>
+
+              <ul class="form__list">
+                <li class="form__box">
+                  <button class="form__elem" type="button">Город или регион 1</button>
+                </li>
+
+                <li class="form__box">
+                  <button class="form__elem" type="button">Город или регион 2</button>
+                </li>
+
+                <li class="form__box">
+                  <button class="form__elem" type="button">Город или регион 3</button>
+                </li>
+              </ul>
+            </li>
+
+            <li class="form__item">
+              <div class="form__subtitle">Цена</div>
+
+              <div class="form__wrapper">
+                <label class="form__cost categories-btn">
+                  от
+
+                  <input class="form__cost-value" type="number">
+                </label>
+
+                <label class="form__cost categories-btn">
+                  до
+
+                  <input class="form__cost-value" type="number">
+                </label>
+              </div>
+            </li>
+
+            <li class="form__item">
+              <div class="form__subtitle">Продавцы</div>
+
+              <div class="form__wrapper">
+                <label class="form__seller categories-btn">
+                  <input class="form__seller-checkbox" type="checkbox">
+
+                  <div class="form__seller-text">Частные</div>
+                </label>
+
+                <label class="form__seller categories-btn">
+                  <input class="form__seller-checkbox" type="checkbox">
+
+                  <div class="form__seller-text">Компании</div>
+                </label>
+              </div>
+            </li>
+
+            <li class="form__item">
+              <div class="form__subtitle">Сортировать</div>
+
+              <ul class="form__sort">
+                <li class="form__sort-item">
+                  <label class="form__case">
+                    <input class="form__radio" name="sort" type="radio">
+
+                    <div class="form__sort-text">По умолчанию</div>
+                  </label>
+                </li>
+
+                <li class="form__sort-item">
+                  <label class="form__case">
+                    <input class="form__radio" name="sort" type="radio">
+
+                    <div class="form__sort-text">По дате</div>
+                  </label>
+                </li>
+
+                <li class="form__sort-item">
+                  <label class="form__case">
+                    <input class="form__radio" name="sort" type="radio">
+
+                    <div class="form__sort-text">Дешевле</div>
+                  </label>
+                </li>
+
+                <li class="form__sort-item">
+                  <label class="form__case">
+                    <input class="form__radio" name="sort" type="radio">
+
+                    <div class="form__sort-text">Дороже</div>
+                  </label>
+                </li>
+
+                <li class="form__sort-item">
+                  <label class="form__case">
+                    <input class="form__radio" name="sort" type="radio">
+
+                    <div class="form__sort-text">По удалённости</div>
+                  </label>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="form__inner">
+            <label class="form__label">
+              <input class="form__label-input" type="checkbox">
+
+              <div class="form__label-text">Только с фото</div>
+            </label>
+
+            <label class="form__label">
+              <input class="form__label-input" type="checkbox">
+
+              <div class="form__label-text">С доставкой</div>
+            </label>
+          </div>
+
+          <button class="form__all" type="button">Показать 230 объявлений</button>
+
+        </div>
+
+        <label class="header__label">
+          <input class="header__input" type="text" placeholder="Поиск по объявлениям...">
+        </label>
+
+        <button href="#" class="header__btn btn-blue" type="submit">
+          <img class="header__btn-img" src="sprite/sprite.svg#search" alt="поиск">
+
+          Найти
+        </button>
+      </form>
+
+      <a class="header__application-add btn-blue" href="#">Создать объявление</a>
+    </div>
+  </div>
+</header>
+
+    <div class="inner inner--property"></div>
+
+    <main class="main">
+      <section class="data">
+  <div class="container">
+    <div class="data__title data__title--property title">
+      <span class="data__title-categories">Недвижимость</span>
+
+      <img class="data__title-img" src="images/data-title2.png" alt="Недвижимость">
+
+      <span class="data__title-text">в Риге</span>
+    </div>
+
+    <div class="data__subtitle">
+      Продажа 1-комнатных квартир в Риге
+    </div>
+
+    <div class="data__offers">
+      67 030 предложений
+    </div>
+
+    <ul class="data__categories data__categories--property">
+      <li class="data__categories-item data__categories-item--active">
+        <a href="#" class="data__categories-label">
+          <img class="data__categories-img" src="images/property-data1.png" alt="Купить">
+
+          <input class="data__radio" type="radio" name="categories" checked>
+
+          <div class="data__text">Купить</div>
+        </a>
+      </li>
+
+      <li class="data__categories-item">
+        <a href="#" class="data__categories-label">
+          <img class="data__categories-img" src="images/property-data2.png" alt="Снять">
+
+          <input class="data__radio" type="radio" name="categories">
+
+          <div class="data__text">Снять</div>
+        </a>
+      </li>
+
+      <li class="data__categories-item">
+        <a href="#" class="data__categories-label">
+          <img class="data__categories-img data__categories-img--fit" src="images/property-data3.png" alt="Посуточно">
+
+          <input class="data__radio" type="radio" name="categories">
+
+          <div class="data__text">Посуточно</div>
+        </a>
+      </li>
+
+      <li class="data__categories-item  data__categories-item--short">
+        <a href="#" class="data__categories-label">
+          <img class="data__categories-img data__categories-img--fit" src="images/property-data4.png" alt="Запрос на недвижимость">
+
+          <input class="data__radio" type="radio" name="categories">
+
+          <div class="data__text">Запрос на недвижимость</div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+      <section class="map">
+
+  <div class="container">
+
+    <div id="map"></div>
+
+    <a class="map__btn" href="#">Объявления на карте</a>
+  </div>
+</section>
+      
+    </main>
+
+    ла
+    
+    <footer class="footer">
+  <div class="container">
+    <ul class="footer__top">
+      <li class="footer__item">
+        <div class="footer__subtitle">
+          Транспорт
+        </div>
+
+        <ul class="footer__list">
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Легковые авто</a>
+          </li>
+
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Запчасти и аксессуары</a>
+          </li>
+
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Мото</a>
+          </li>
+
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Коммерческий транспорт</a>
+          </li>
+
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Водный транспорт</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer__item">
+        <div class="footer__subtitle">
+          Недвижимость
+        </div>
+
+        <ul class="footer__list">
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Купить</a>
+          </li>
+
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Снять</a>
+          </li>
+
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Посуточно</a>
+          </li>
+
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Запрос на недвижимость</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer__item">
+        <div class="footer__subtitle">
+          Личные вещи
+        </div>
+
+        <ul class="footer__list">
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Одежда, обувь, аксессуары</a>
+          </li>
+
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Детская одежда, обувь</a>
+          </li>
+
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Товары для детей</a>
+          </li>
+
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Красота и здоровье</a>
+          </li>
+
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Часы и украшения</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer__item">
+        <div class="footer__subtitle">
+          Услуги
+        </div>
+
+        <ul class="footer__list">
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Перевозки, транспорт</a>
+          </li>
+
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Ремонт, строительство</a>
+          </li>
+
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Ремонт техники</a>
+          </li>
+
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Красота и здоровье</a>
+          </li>
+
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Уборка, дезинсекция</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer__item">
+        <div class="footer__subtitle">
+          Работа
+        </div>
+
+        <ul class="footer__list">
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Вакансии</a>
+          </li>
+
+          <li class="footer__elem">
+            <a class="footer__link" href="#">Резюме</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="footer__bottom">
+      <a class="footer__logo logo" href="index.html">
+        <img class="logo__img" src="sprite/sprite.svg#logo" alt="логотип">
+      </a>
+
+      <nav class="footer__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Все объявления</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">Авто</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">Недвижимость</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">Работа</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">Услуги</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">Еще</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">О компании</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">Помощь</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__img" src="sprite/sprite.svg#social-PA" alt="личный кабинет">
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__img" src="sprite/sprite.svg#social-message" alt="сообщения">
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__img" src="sprite/sprite.svg#social-notification" alt="уведомления">
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__img" src="sprite/sprite.svg#social-favorite" alt="избранное">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script>
+      let map;
+
+      ymaps.ready(initMap);
+
+      function initMap() {
+        map = new ymaps.Map(document.getElementById("map"), {
+          center: [55.882409, 37.575702],
+          zoom: 12,
+        });
+
+        let placemark = new ymaps.Placemark([55.882409, 37.575702], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'sprite/sprite.svg#map-marker',
+          iconImageSize: [70, 70],
+          iconImageOffset: [-25, -77]
+        });
+        map.controls.remove('geolocationControl');
+        map.controls.remove('searchControl');
+        map.controls.remove('trafficControl');
+        map.controls.remove('typeSelector');
+        map.controls.remove('fullscreenControl');
+        map.controls.remove('zoomControl');
+        map.controls.remove('rulerControl');
+
+        map.geoObjects.add(placemark);
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js" defer></script>
+  </body>
+
+</html>

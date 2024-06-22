@@ -1,3 +1,24 @@
-body {
-  padding: 0;
-}
+@import 'fonts';
+@import 'vars';
+@import 'mixin';
+@import 'reset';
+@import 'set';
+@import 'libs';
+@import 'global';
+
+@import 'components/header';
+// @import 'components/modal-admin';
+@import 'components/modal';
+@import 'components/menu';
+@import 'components/banner';
+@import 'components/categories';
+@import 'components/_blurbs';
+@import 'components/_data';
+@import 'components/_map';
+@import 'components/_recomendation';
+@import 'components/footer';
+
+
+@import 'index';
+
+@import 'media';

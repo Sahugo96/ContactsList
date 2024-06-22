@@ -1,0 +1,231 @@
+.header {
+  @include _48 {
+    position: relative;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    padding-top: 1.8rem;
+    @include _48 {
+      padding-top: 4.2rem;
+    }
+  }
+
+  &__location {
+    font-size: 1.6rem;
+    color: #8990AB;
+    padding-top: 0.3rem;
+    display: flex;
+    align-items: center;
+    @include _48 {
+      display: none;
+    }
+
+    &-img {
+      width: 1.6rem;
+      height: 1.8rem;
+      object-fit: cover;
+      object-position: center center;
+      margin-right: 1rem;
+    }
+    
+    &-text {
+      margin-left: 1.4rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #20242C;
+      text-decoration: underline;
+    }
+  }
+
+  &__menu {
+    margin-left: 16.4rem;
+    padding-bottom: 0.3rem;
+    @include _48 {
+      display: none;
+    }
+  }
+
+  &__social {
+    margin-left: auto;
+
+    @include _48 {
+      & {
+        .social {
+          &__item {
+            display: none;
+    
+            &--mob {
+              display: block;
+              margin-right: 0;
+            }
+          }
+          
+          &__link {
+            width: 10.4rem;
+            height: 10.4rem;
+          }
+    
+          &__img {
+            width: 3.4rem;
+            height: 3.6rem;        
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    @include _48 {
+      padding-top: 3.6rem;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    max-width: 23.1rem;
+    max-height: 12.7rem;
+    @include _48 {
+      max-width: 21.8rem;
+      max-height: 10.6rem;
+      width: 100%;
+      position: absolute;
+      top: 5.8rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__search {
+    position: relative;
+    display: flex;
+    width: 97rem;
+    padding: 0.8rem 1rem;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    background-color: #fff;
+    border-radius: 33.3rem;
+    @include _48 {
+      width: 100%;
+      padding: 1.6rem 2.2rem 1.8rem 3.6rem;
+      margin: 0;
+      flex-direction: row-reverse;
+    }
+  }
+  
+  &__categories {
+    height: 5rem;
+    padding: 0.7rem 5.4rem 0.7rem 2rem;
+    box-shadow: 0.86rem 0.86rem 3.4rem rgba(39, 138, 230, 0.3);
+    @include _48 {
+      height: 10.4rem;
+      width: 10.4rem;
+      padding: 0;
+      font-size: 0;
+      justify-content: center;
+    }
+    
+    &-img {
+      max-width: 1.6rem;
+      height: 1.5rem;
+      object-fit: cover;
+      object-position: center center;
+      margin-right: 1rem;
+      @include _48 {
+        display: none;
+      }
+  
+      &--mob {
+        display: none;
+        max-width: 4.8rem;
+        height: 4.8rem;
+        margin-right: 0;
+        @include _48 {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__label {
+    width: 60rem;
+    margin: 0 1rem;
+    padding-left: 1.4rem;
+    display: flex;
+    align-items: center;
+    @include _48 {
+      width: 62rem;
+      margin: 0;
+      padding-left: 7.2rem;
+      padding-top: 0.6rem;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 4.8rem;
+        height: 4.8rem;
+        margin-bottom: 0.6rem;
+        position: absolute; 
+        left: 0;
+        background-image: url(../sprite/sprite.svg#search-mob);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 175% 175%;
+      }
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: 0;
+    outline: transparent;
+    padding: 0;
+    @include _48 {
+      font-size: 3rem;
+    }
+
+    &::placeholder {
+      font-size: 1.8rem;
+      color: #9CA0AE;
+      @include _48 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  &__btn {
+    height: 5rem;
+    margin-left: auto;
+    padding: 0.7rem 3rem 0.7rem 2.8rem;
+    box-shadow: 0.86rem 0.86rem 3.4rem rgba(39, 138, 230, 0.3);
+    @include _48 {
+      display: none;
+    }
+    
+    &-img {
+      width: 1.8rem;
+      height: 1.7rem;
+      object-fit: cover;
+      object-position: center center;
+      margin-right: 1.1rem;
+    }
+  }
+
+  &__application-add {
+    padding: 1.5rem 5.2rem 1.6rem;
+    box-shadow: 1rem 1rem 4rem rgba(39, 115, 230, 0.15);
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-top: 0.3rem;
+    @include _48 {
+      display: none;
+    }
+  }
+}

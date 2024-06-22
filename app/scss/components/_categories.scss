@@ -1,0 +1,119 @@
+
+.categories {
+  padding: 6rem 0;
+  @include _48 {
+    padding: 2.2rem 0 6rem;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__prev,
+  &__next {
+    width: 5.9rem;
+    height: 11.6rem;
+    position: absolute;
+    top: 0;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    @include _48 {
+      display: none;
+    }
+  }
+
+  &__prev {
+    transform: translateY(-0.2rem);
+  }
+
+  &__next {
+    right: 0;
+
+    .categories__arrow {
+      transform: rotate(180deg) translate(-0.3rem, -0.3rem);
+    }
+  }
+
+  &__arrow {
+    width: 1.2rem;
+    height: 1.7rem;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  &__inner {
+    width: 138.6rem;
+    margin: 0 auto;
+    overflow: hidden;
+    @include _48 {
+      padding-top: 2rem;
+      left: 0;
+      right: 0;
+      width: 85.6rem;
+      margin: 0 -4rem 4.2rem;
+      overflow: hidden;
+    }
+  }
+
+  &__item {
+    background-color: #fff;
+    border-radius: 2.7rem;
+    @include _48 {
+      width: 21.4rem;
+      border-radius: 3.3em;
+    }
+  }
+  
+  &__link {
+    height: 11.6rem;
+    padding: 0.1rem 0.5rem 0.1rem 0.9rem;
+    display: flex;
+    align-items: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    @include _48 {
+      justify-content: center;
+      height: 13.4rem;
+      padding: 0 0.4rem 2.8rem;
+      align-items: flex-end;
+      font-size: 3rem;
+      line-height: 1.2;
+    }
+  }
+
+  &__img {
+    width: 8.7rem;
+    height: 8.7rem;
+    margin-right: 1.1rem;
+    @include _48 {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, -3.6rem);
+      width: 11.4rem;
+      height: 9.8rem;
+      margin-right: 0;
+    }
+  }
+
+  &__text {
+    @include line-camp(2);
+    text-overflow: ellipsis;
+    @include _48 {
+      -webkit-line-clamp: 1;
+    }
+  }
+
+  &__all {
+    display: none;
+    @include _48 {
+      display: flex;
+      justify-content: center;
+      font-size: 3.2rem;
+      line-height: 1.7;
+    }
+  }
+}
